@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prayer Sealed Ministries</title>
+<meta name="description" content="Prayer Sealed Ministries builds devotional software that keeps a person's prayers and Scripture journal private. Prayer Sealed and My Life with Christ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0D1330;
+    --night-2:#151D42;
+    --gilt:#C8A44B;
+    --gilt-dim:#8A7334;
+    --parchment:#E9E4D6;
+    --muted:#9199BE;
+    --rule:#28315C;
+    --measure:34rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--night);
+    color:var(--parchment);
+    font-family:"Gentium Book Plus",Georgia,serif;
+    font-size:1.0625rem;
+    line-height:1.72;
+  }
+  .wrap{max-width:62rem;margin:0 auto;padding:0 2rem}
+  @media (max-width:40rem){ .wrap{padding:0 1.35rem} }
+
+  a{color:var(--gilt);text-decoration:none;border-bottom:1px solid var(--gilt-dim);padding-bottom:1px}
+  a:hover{border-bottom-color:var(--gilt)}
+  a:focus-visible{outline:2px solid var(--gilt);outline-offset:3px;border-radius:2px}
+
+  /* ---- masthead ---- */
+  .masthead{padding:2.25rem 0 0;display:flex;align-items:baseline;gap:.75rem}
+  .masthead .name{
+    font-size:1rem;letter-spacing:.01em;color:var(--parchment);
+    border:0;
+  }
+  .masthead .inc{font-size:.9rem;color:var(--muted);font-style:italic}
+
+  /* ---- hero ---- */
+  .hero{padding:5.5rem 0 5rem;text-align:center}
+  .seal{width:92px;height:92px;margin:0 auto 2.75rem;display:block}
+  .verse{
+    font-size:clamp(1.65rem,4.6vw,2.9rem);
+    line-height:1.3;
+    margin:0 auto;
+    max-width:21ch;
+    font-weight:400;
+  }
+  .verse .shut{color:var(--gilt)}
+  .cite{
+    margin:1.6rem 0 0;font-size:.95rem;color:var(--muted);
+    font-family:"Public Sans",system-ui,sans-serif;
+  }
+  .stand{
+    margin:3.25rem auto 0;max-width:var(--measure);
+    font-size:1.1875rem;color:var(--parchment);
+  }
+
+  /* ---- rule ---- */
+  .hr{height:1px;background:var(--rule);border:0;margin:0}
+
+  /* ---- apps ---- */
+  .apps{padding:4.5rem 0 1rem}
+  .app{padding:0 0 4.25rem;max-width:var(--measure)}
+  .app h2{
+    font-size:1.85rem;font-weight:700;margin:0 0 .35rem;letter-spacing:-.005em;
+  }
+  .app .what{color:var(--muted);font-style:italic;margin:0 0 1.15rem}
+  .app p{margin:0 0 1.15rem}
+  .plain{margin:0;padding:0;list-style:none}
+  .plain li{
+    padding-left:1.4rem;position:relative;margin:0 0 .4rem;color:var(--parchment);
+  }
+  .plain li::before{
+    content:"";position:absolute;left:0;top:.72em;
+    width:.5rem;height:1px;background:var(--gilt-dim);
+  }
+  .soon{
+    display:inline-block;font-family:"Public Sans",system-ui,sans-serif;
+    font-size:.8125rem;color:var(--night);background:var(--gilt);
+    padding:.1rem .5rem;border-radius:2px;vertical-align:.22em;margin-left:.5rem;
+    font-weight:500;
+  }
+
+  /* ---- about ---- */
+  .about{padding:4.5rem 0}
+  .about h2, .give h2, .contact h2{
+    font-size:1.35rem;margin:0 0 1rem;font-weight:700;
+  }
+  .about p, .give p, .contact p{max-width:var(--measure);margin:0 0 1.15rem}
+
+  .board{
+    max-width:var(--measure);margin:1.5rem 0 0;padding:0;list-style:none;
+    color:var(--muted);font-size:1rem;
+  }
+  .board li{margin:0 0 .3rem}
+  .board .role{color:var(--parchment)}
+
+  /* ---- give ---- */
+  .give{padding:4.5rem 0;background:var(--night-2)}
+  .pending{
+    max-width:var(--measure);font-size:.95rem;color:var(--muted);
+    border-left:2px solid var(--gilt-dim);padding-left:1.1rem;margin:1.75rem 0 0;
+  }
+
+  /* ---- contact / footer ---- */
+  .contact{padding:4.5rem 0 1rem}
+  footer{
+    padding:2.5rem 0 3.5rem;color:var(--muted);font-size:.9rem;
+    font-family:"Public Sans",system-ui,sans-serif;line-height:1.6;
+  }
+  footer p{margin:0 0 .3rem;max-width:44rem}
+
+  /* ---- one motion moment: the seal presses, the verse settles ---- */
+  @media (prefers-reduced-motion:no-preference){
+    .seal{animation:press .9s cubic-bezier(.22,1,.36,1) both}
+    .verse{animation:settle .9s .25s cubic-bezier(.22,1,.36,1) both}
+    .cite,.stand{animation:settle .9s .45s cubic-bezier(.22,1,.36,1) both}
+    @keyframes press{
+      from{opacity:0;transform:scale(1.22)}
+      to{opacity:1;transform:scale(1)}
+    }
+    @keyframes settle{
+      from{opacity:0;transform:translateY(.5rem)}
+      to{opacity:1;transform:none}
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="masthead">
+    <span class="name">Prayer Sealed Ministries</span>
+    <span class="inc">Tallahassee, Florida</span>
+  </header>
+</div>
+
+<div class="wrap">
+  <section class="hero">
+    <svg class="seal" viewBox="0 0 100 100" role="img" aria-label="A wax seal">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#C8A44B" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="39" fill="none" stroke="#8A7334" stroke-width="1"/>
+      <path d="M50 26v48M34 44h32" stroke="#C8A44B" stroke-width="2.5" stroke-linecap="square"/>
+      <circle cx="50" cy="60" r="7.5" fill="none" stroke="#C8A44B" stroke-width="2"/>
+    </svg>
+
+    <p class="verse">
+      Go into your room, <span class="shut">close the door</span>,
+      and pray to your Father who is unseen.
+    </p>
+    <p class="cite">Matthew 6:6</p>
+
+    <p class="stand">
+      We build devotional software that takes that instruction literally.
+      What you say to God stays between you and God.
+    </p>
+  </section>
+</div>
+
+<hr class="hr">
+
+<div class="wrap">
+  <section class="apps">
+    <article class="app">
+      <h2>Prayer Sealed</h2>
+      <p class="what">An encrypted prayer app.</p>
+      <p>
+        Write a prayer, keep a request, record an answer. Everything is
+        encrypted on your phone before it goes anywhere, so only you and
+        the people you choose to share with can read it. We can't.
+      </p>
+      <ul class="plain">
+        <li>End-to-end encryption, built on post-quantum cryptography</li>
+        <li>Share a request with a prayer partner or a group</li>
+        <li>Keep a record of prayers answered</li>
+      </ul>
+    </article>
+
+    <article class="app">
+      <h2>My Life with Christ <span class="soon">In development</span></h2>
+      <p class="what">A Scripture journal that never leaves your phone.</p>
+      <p>
+        Read through the Bible by book, by outline, or by topic, and attach
+        your own notes to any of it: sermons you heard, sermons you found,
+        reflections from your own reading, prayers. No account. No server.
+        No network calls at all.
+      </p>
+      <ul class="plain">
+        <li>Browse Scripture three ways</li>
+        <li>Attach sermon notes, reflections, and prayers to any passage</li>
+        <li>Your journal stays on your device</li>
+      </ul>
+    </article>
+  </section>
+</div>
+
+<hr class="hr">
+
+<div class="wrap">
+  <section class="about">
+    <h2>About the ministry</h2>
+    <p>
+      Prayer Sealed Ministries, Inc. is a Florida not-for-profit corporation,
+      incorporated September 25, 2026. It exists to advance Christian prayer
+      and the study of Scripture by building and maintaining devotional
+      software, and by making that software broadly available.
+    </p>
+    <p>
+      Most devotional apps send what you write to someone else's server,
+      where it can be read, analyzed, subpoenaed, or breached. We think a
+      person's prayer life deserves better than that, and that the privacy
+      is not a feature of the ministry but the point of it.
+    </p>
+
+    <h2 style="margin-top:2.75rem">Board of directors</h2>
+    <ul class="board">
+      <li><span class="role">Paul A. Clark</span></li>
+      <li><span class="role">Felister Onyando</span></li>
+      <li><span class="role">Clifton Martin Justin III</span></li>
+      <li><span class="role">Jerry Keiser</span></li>
+      <li><span class="role">Sheila Clark</span></li>
+    </ul>
+  </section>
+</div>
+
+<section class="give">
+  <div class="wrap">
+    <h2>Supporting the work</h2>
+    <p>
+      The apps are supported by gifts. Contributions pay for hosting,
+      developer program fees, security review, and the ongoing work of
+      keeping both apps running and safe.
+    </p>
+    <p class="pending">
+      Prayer Sealed Ministries, Inc. has applied to the Internal Revenue
+      Service for recognition of exemption under Section 501(c)(3).
+      Deductibility of contributions is subject to IRS recognition. We will
+      post our determination letter here when it arrives.
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:hello@prayersealed.org">hello@prayersealed.org</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Prayer Sealed Ministries, Inc. &middot; Florida document no. N26000013210</p>
+    <p>Because Prayer Can't Wait&trade;</p>
+  </footer>
+</div>
+
+</body>
+</html>
