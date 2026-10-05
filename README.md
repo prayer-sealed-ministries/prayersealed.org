@@ -31,4 +31,4 @@ contributions is subject to IRS recognition.
 
 ## Contact
 
-hello@prayersealed.org
+systemslibrarian@gmail.com
