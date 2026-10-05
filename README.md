@@ -18,5 +18,17 @@ Most devotional software works the other way around.
 
 ## This repository
 
-A static site served by GitHub Pages at
-[prayersealed.org](https://prayersealed.org).
+A static site served by GitHub Pages at prayersealed.org.
+
+    index.html    the site
+    CNAME         custom domain for GitHub Pages
+
+## Status
+
+Prayer Sealed Ministries, Inc. has applied for recognition of exemption
+under Section 501(c)(3) of the Internal Revenue Code. Deductibility of
+contributions is subject to IRS recognition.
+
+## Contact
+
+hello@prayersealed.org
