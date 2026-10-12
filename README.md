@@ -16,6 +16,19 @@ life private.
 
 Most devotional software works the other way around.
 
+## Part of a larger path
+
+Prayer Sealed is **Step 5 — Intercede** in the Scripture & ministry path of Prayer Sealed Ministries, Inc., built by [Paul Clark](https://github.com/systemslibrarian). If you're new to faith, the path begins with **[Gospel Journey](https://systemslibrarian.github.io/gospel-journey/)** — coming to know Jesus Christ as Lord and Savior.
+
+| # | Stage | Project |
+|---|---|---|
+| 1 | Believe | [Gospel Journey](https://systemslibrarian.github.io/gospel-journey/) · [repo](https://github.com/systemslibrarian/gospel-journey) |
+| 2 | Understand | [Scripture Journey](https://scripturejourney.com) · [repo](https://github.com/systemslibrarian/scripture-journey) |
+| 3 | Remember | [Hide in Heart](https://hideinheart.com) · [repo](https://github.com/systemslibrarian/HideInHeart) |
+| 4 | Discern | [His Will Guide](https://hiswillguide.com) · [repo](https://github.com/systemslibrarian/hiswillguide) |
+| **5** | **Intercede** | **Prayer Sealed** ← you are here |
+| 6 | Pass It On | My Life With Christ *(in development)* |
+
 ## This repository
 
 A static site served by GitHub Pages at prayersealed.org.
