@@ -36,6 +36,9 @@ A static site served by GitHub Pages at prayersealed.org. Every push to
 (Settings → Pages → Source: GitHub Actions).
 
     index.html                    the site
+    favicon.ico, icon-*.png       browser and bookmark icons (the Prayer Sealed app icon)
+    apple-touch-icon.png          icon for iPhone/iPad bookmarks and home screens
+    site.webmanifest              name and icons for "Add to Home Screen"
     CNAME                         custom domain record (the live domain is set in Settings → Pages)
     .github/workflows/pages.yml   publishes the site
 
