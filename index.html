@@ -81,6 +81,26 @@
   .app h2{
     font-size:1.85rem;font-weight:700;margin:0 0 .35rem;letter-spacing:-.005em;
   }
+  /* ---- app links under the masthead ---- */
+  .appnav{
+    display:flex;flex-wrap:wrap;gap:.4rem 1.35rem;padding:1.1rem 0 0;
+    font-family:"Public Sans",system-ui,sans-serif;font-size:.9rem;
+  }
+  .appnav a{color:var(--muted);border-bottom:0;padding-bottom:0}
+  .appnav a:hover{color:var(--parchment)}
+
+  /* ---- Read more toggle ---- */
+  .more{margin:0 0 1.15rem}
+  .more summary{
+    cursor:pointer;list-style:none;display:inline-block;color:var(--gilt);
+    font-family:"Public Sans",system-ui,sans-serif;font-size:.9rem;
+  }
+  .more summary::-webkit-details-marker{display:none}
+  .more summary:focus-visible{outline:2px solid var(--gilt);outline-offset:3px;border-radius:2px}
+  .more .less, .more[open] .read{display:none}
+  .more[open] .less{display:inline}
+  .more[open] summary{margin-bottom:1.15rem}
+
   .app h2 a{color:inherit;border-bottom-color:var(--gilt-dim)}
   .app h2 a:hover{border-bottom-color:var(--gilt)}
   .app .what{color:var(--muted);font-style:italic;margin:0 0 1.15rem}
@@ -153,6 +173,13 @@
     <span class="name">Prayer Sealed Ministries</span>
     <span class="inc">Tallahassee, Florida</span>
   </header>
+  <nav class="appnav" aria-label="Our apps">
+    <a href="https://app.prayersealed.org/">Prayer Sealed</a>
+    <a href="#my-life-with-christ">My Life with Christ</a>
+    <a href="https://scripturejourney.com/">Scripture Journey</a>
+    <a href="https://hideinheart.com/">Hide in Heart</a>
+    <a href="https://hiswillguide.com/">HisWillGuide</a>
+  </nav>
 </div>
 
 <div class="wrap">
@@ -189,17 +216,20 @@
         encrypted on your phone before it goes anywhere, so only you and
         the people you choose to share with can read it. We can’t.
       </p>
-      <p>
-        Prayer Sealed is being built to remain free to use, without advertising
-        and without selling users’ personal information. It is designed to help
-        believers pray for others, remember answered prayer, reflect on God’s
-        faithfulness, and participate in prayer with Christian community.
-      </p>
-      <ul class="plain">
-        <li>End-to-end encryption, built on post-quantum cryptography</li>
-        <li>Share a request with a prayer partner or a group</li>
-        <li>Keep a record of prayers answered</li>
-      </ul>
+      <details class="more">
+        <summary><span class="read">Read more about Prayer Sealed</span><span class="less">Show less</span></summary>
+        <p>
+          Prayer Sealed is being built to remain free to use, without advertising
+          and without selling users’ personal information. It is designed to help
+          believers pray for others, remember answered prayer, reflect on God’s
+          faithfulness, and participate in prayer with Christian community.
+        </p>
+        <ul class="plain">
+          <li>End-to-end encryption, built on post-quantum cryptography</li>
+          <li>Share a request with a prayer partner or a group</li>
+          <li>Keep a record of prayers answered</li>
+        </ul>
+      </details>
       <p style="margin-top:1.75rem">
         <strong>Prayer Sealed is already in private beta.</strong> iPhone testing
         is available through TestFlight by invitation. If you would like to try
@@ -214,7 +244,7 @@
       </p>
     </article>
 
-    <article class="app">
+    <article class="app" id="my-life-with-christ">
       <h2>My Life with Christ <span class="soon">In development</span></h2>
       <p class="what">A Scripture journal that never leaves your phone.</p>
       <p>
@@ -223,11 +253,14 @@
         reflections from your own reading, prayers. No account. No server.
         No network calls at all.
       </p>
-      <ul class="plain">
-        <li>Browse Scripture three ways</li>
-        <li>Attach sermon notes, reflections, and prayers to any passage</li>
-        <li>Your journal stays on your device</li>
-      </ul>
+      <details class="more">
+        <summary><span class="read">Read more about My Life with Christ</span><span class="less">Show less</span></summary>
+        <ul class="plain">
+          <li>Browse Scripture three ways</li>
+          <li>Attach sermon notes, reflections, and prayers to any passage</li>
+          <li>Your journal stays on your device</li>
+        </ul>
+      </details>
     </article>
 
     <article class="app">
