@@ -18,11 +18,11 @@ Most devotional software works the other way around.
 
 ## Part of a larger path
 
-Prayer Sealed is **Step 5 — Intercede** in the Scripture & ministry path of Prayer Sealed Ministries, Inc., built by [Paul Clark](https://github.com/systemslibrarian). If you're new to faith, the path begins with **[Gospel Journey](https://systemslibrarian.github.io/gospel-journey/)** — coming to know Jesus Christ as Lord and Savior.
+Prayer Sealed is **Step 5 — Intercede** in the Scripture & ministry path of Prayer Sealed Ministries, Inc., built by [Paul Clark](https://github.com/systemslibrarian). If you're new to faith, the path begins with **[Gospel Journey](https://gospel.prayersealed.org/)** — coming to know Jesus Christ as Lord and Savior.
 
 | # | Stage | Project |
 |---|---|---|
-| 1 | Believe | [Gospel Journey](https://systemslibrarian.github.io/gospel-journey/) · [repo](https://github.com/systemslibrarian/gospel-journey) |
+| 1 | Believe | [Gospel Journey](https://gospel.prayersealed.org/) · [repo](https://github.com/systemslibrarian/gospel-journey) |
 | 2 | Understand | [Scripture Journey](https://scripture.prayersealed.org/) · [repo](https://github.com/systemslibrarian/scripture-journey) |
 | 3 | Remember | [Hide in Heart](https://heart.prayersealed.org/) · [repo](https://github.com/systemslibrarian/HideInHeart) |
 | 4 | Discern | [His Will Guide](https://guide.prayersealed.org/) · [repo](https://github.com/systemslibrarian/hiswillguide) |
