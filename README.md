@@ -31,10 +31,13 @@ Prayer Sealed is **Step 5 — Intercede** in the Scripture & ministry path of Pr
 
 ## This repository
 
-A static site served by GitHub Pages at prayersealed.org.
+A static site served by GitHub Pages at prayersealed.org. Every push to
+`main` publishes it through the "Deploy to GitHub Pages" workflow
+(Settings → Pages → Source: GitHub Actions).
 
-    index.html    the site
-    CNAME         custom domain for GitHub Pages
+    index.html                    the site
+    CNAME                         custom domain record (the live domain is set in Settings → Pages)
+    .github/workflows/pages.yml   publishes the site
 
 ## Status
 
