@@ -23,9 +23,9 @@ Prayer Sealed is **Step 5 — Intercede** in the Scripture & ministry path of Pr
 | # | Stage | Project |
 |---|---|---|
 | 1 | Believe | [Gospel Journey](https://systemslibrarian.github.io/gospel-journey/) · [repo](https://github.com/systemslibrarian/gospel-journey) |
-| 2 | Understand | [Scripture Journey](https://scripturejourney.com) · [repo](https://github.com/systemslibrarian/scripture-journey) |
-| 3 | Remember | [Hide in Heart](https://hideinheart.com) · [repo](https://github.com/systemslibrarian/HideInHeart) |
-| 4 | Discern | [His Will Guide](https://hiswillguide.com) · [repo](https://github.com/systemslibrarian/hiswillguide) |
+| 2 | Understand | [Scripture Journey](https://scripture.prayersealed.org/) · [repo](https://github.com/systemslibrarian/scripture-journey) |
+| 3 | Remember | [Hide in Heart](https://heart.prayersealed.org/) · [repo](https://github.com/systemslibrarian/HideInHeart) |
+| 4 | Discern | [His Will Guide](https://guide.prayersealed.org/) · [repo](https://github.com/systemslibrarian/hiswillguide) |
 | **5** | **Intercede** | **Prayer Sealed** ← you are here |
 | 6 | Pass It On | My Life With Christ *(in development)* |
 
