@@ -35,7 +35,11 @@ A static site served by GitHub Pages at prayersealed.org. Every push to
 `main` publishes it through the "Deploy to GitHub Pages" workflow
 (Settings → Pages → Source: GitHub Actions).
 
-    index.html                    the site
+    index.html                    concise ministry home page
+    apps.html                     app descriptions and links
+    about.html                    ministry purpose and board
+    support.html                  support and exemption status
+    styles.css, navigation.js     responsive layout and mobile menu
     favicon.ico, icon-*.png       browser and bookmark icons (the Prayer Sealed app icon)
     apple-touch-icon.png          icon for iPhone/iPad bookmarks and home screens
     site.webmanifest              name and icons for "Add to Home Screen"
